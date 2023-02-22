@@ -58,7 +58,8 @@ const Div = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background:green;
+    background: #ff0000;
+    color:#fff
   }
 
   .inner {
@@ -72,13 +73,8 @@ const Div = styled.section`
     justify-content: center;
     height: 10px;
     margin-top: 0;
-    text-transform:uppercase;
+    text-transform: uppercase;
   }
-
-  
- 
-
- 
 `
 
 export default WelcomeSlider

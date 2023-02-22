@@ -47,7 +47,7 @@ const Sidebar = () => {
   )
 }
 const Nav = styled.section`
-  background: var(--clr-primary-4);
+  background: #000;
   height: 80px;
   display: flex;
   justify-content: space-around;

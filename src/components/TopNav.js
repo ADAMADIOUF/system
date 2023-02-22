@@ -34,7 +34,7 @@ const TopNav = () => {
 }
 const Wrapper = styled.section`
   .nav-top {
-    background: var(--clr-primary-4);
+    background:#000;
    
   }
   .logo {
