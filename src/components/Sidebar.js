@@ -1,28 +1,48 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { data } from '../dataSidebar'
 import styled from 'styled-components'
 import { AiOutlineBars, AiFillCloseCircle } from 'react-icons/ai'
 import SubMenu from './SubMenu'
 
 const Sidebar = () => {
+   const [scrolled, setScrolled] = useState(false)
+   const handleScroll = () => {
+     const offset = window.scrollY
+     if (offset > 200) {
+       setScrolled(true)
+     } else {
+       setScrolled(false)
+     }
+   }
+
+   useEffect(() => {
+     window.addEventListener('scroll', handleScroll)
+   })
+   let navbarClasses = ['navbar']
+   if (scrolled) {
+     navbarClasses.push('scrolled')
+   }
+
   const [sidebar, setSidebar] = useState(false)
 
   const showSidebar = () => setSidebar(!sidebar)
   return (
     <>
-     
-      <Nav>
-        <AiOutlineBars className='nav-icon' onClick={showSidebar} />
-       
-      </Nav>
-      <SidebarNav sidebar={sidebar}>
-        <SidebarWrap>
-          <AiFillCloseCircle className='nav-icon' onClick={showSidebar} />
-          {data.map((item, index) => {
-            return <SubMenu item={item} key={index} showSidebar={showSidebar} />
-          })}
-        </SidebarWrap>
-      </SidebarNav>
+      <header className={navbarClasses.join(' ')}>
+        <Nav>
+          <AiOutlineBars className='nav-icon' onClick={showSidebar} />
+        </Nav>
+        <SidebarNav sidebar={sidebar}>
+          <SidebarWrap>
+            <AiFillCloseCircle className='nav-icon' onClick={showSidebar} />
+            {data.map((item, index) => {
+              return (
+                <SubMenu item={item} key={index} showSidebar={showSidebar} />
+              )
+            })}
+          </SidebarWrap>
+        </SidebarNav>
+      </header>
     </>
   )
 }

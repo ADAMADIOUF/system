@@ -12,7 +12,6 @@ const AddToCart = ({ product }) => {
   return (
     <Wrapper>
       <div className='btn-container'>
-      
         <Link
           to={`/cart`}
           className='btn-whatsapp'
@@ -20,6 +19,7 @@ const AddToCart = ({ product }) => {
         >
           <a href=' https://wa.me/221777618072' className='btn-whatsapp'>
             <FaWhatsapp />
+            Commander sur whatsapp
           </a>
         </Link>
       </div>

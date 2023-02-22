@@ -40,6 +40,7 @@ const WelcomeSlider = () => {
               >
                 <div className='carousel-item-text'>
                   <p> {item.description}</p>
+                 
                 </div>
                 
               </div>
@@ -57,6 +58,7 @@ const Div = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background:green;
   }
 
   .inner {

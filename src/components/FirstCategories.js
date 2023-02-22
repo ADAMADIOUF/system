@@ -15,25 +15,18 @@ const FirstCategories = () => {
     <Wrapper className='first-categories'>
       <div className='section-center '>
         <div className='first-categories-container'>
-          <article>
+          <article className='first-c-img'>
             <img src={f1} alt='' />
           </article>
-          
-          <article>
+
+          <article className='first-c-img'>
+            <img src={f2} alt='' />
+          </article>
+          <article className='first-c-img'>
             <img src={f3} alt='' />
           </article>
-          
-          <article>
-            <img src={f5} alt='' />
-          </article>
-          <article>
-            <img src={f6} alt='' />
-          </article>
-          <article>
-            <img src={f7} alt='' />
-          </article>
-          <article>
-            <img src={f8} alt='' />
+          <article className='first-c-img'>
+            <img src={f4} alt='' />
           </article>
         </div>
       </div>
@@ -44,21 +37,15 @@ const Wrapper = styled.section`
   .first-categories-container {
     margin-top: 2rem;
   }
-  .first-categories-container img {
+  .first-c-img img {
     width: 100%;
     height: 100%;
-  }
-  @media (min-width: 768px) {
-    .first-categories-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-    }
   }
   @media (min-width: 992px) {
     .first-categories-container {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
     }
   }
 `

@@ -15,7 +15,6 @@ Variables
   /* lighter shades of primary color */
   --clr-primary-6: #e1e6e1;
   --clr-white: #fff;
-
   --clr-black: #222;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
@@ -189,4 +188,27 @@ p {
 }
 .products-icons a{
   color: var(--clr-white);
+}
+.scrolled{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background: var(--clr-white);
+  z-index: 2;
+  box-shadow: var(--light-shadow);
+  border-bottom: 1px solid var(--clr-primary-4);
+}
+.slider-tow{
+  text-align: center;
+  margin: 2rem auto ;
+  color: var(--clr-primary2);
+  position: relative;
+}
+.gallery-img img{
+  margin-top: 5rem;
+  height: 300px;
+  width: 100%;
+  background: red;
 }

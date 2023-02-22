@@ -21,7 +21,7 @@ export const data = [
     iconOpened: <AiOutlineArrowUp />,
     subNav: [
       {
-        title: 'saint valentin',
+        title: 'ramadan',
         path: '/promotions/',
       },
     ],
@@ -59,10 +59,9 @@ export const data = [
         title: 'nokia',
         path: '/nokia/',
       },
-      
     ],
   },
-  
+
   {
     title: 'tablettes',
     path: '/',
@@ -70,8 +69,6 @@ export const data = [
     iconClosed: <AiOutlineArrowDown />,
     iconOpened: <AiOutlineArrowUp />,
     subNav: [
-      
-      
       {
         title: 'tablettes enfants',
         path: '/tablet/',
@@ -85,9 +82,8 @@ export const data = [
     iconClosed: <AiOutlineArrowDown />,
     iconOpened: <AiOutlineArrowUp />,
     subNav: [
-    
       {
-        title: 'chergeurs',
+        title: 'chargeurs',
         path: '/charge/',
       },
       {
