@@ -41,6 +41,17 @@ const Wrapper = styled.section`
     width: 100%;
     height: 100%;
   }
+
+  .first-c-img {
+    overflow: hidden;
+  }
+  .first-c-img img {
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  .first-c-img img:hover {
+    transform: scale(1.2);
+  }
   @media (min-width: 992px) {
     .first-categories-container {
       display: grid;

@@ -46,6 +46,7 @@ const Product = ({img,price,id,name}) => {
 const Wrapper = styled.article`
   .container {
     margin-top: 5rem;
+    overflow: hidden;
   }
 
   .container img {

@@ -147,7 +147,7 @@ const Div = styled.section`
   }
   @media (min-width: 992px) {
     .carousel-img {
-      width: 600px;
+      width: 100%;
       height: 100%;
     }
     .carousel {

@@ -206,9 +206,33 @@ p {
   color: var(--clr-primary2);
   position: relative;
 }
+.gallery-img{
+  overflow: hidden;
+}
 .gallery-img img{
   margin-top: 5rem;
   height: 300px;
   width: 100%;
+  transition: var(--transition);
+  cursor: pointer;
   
 }
+.gallery-img img:hover{
+  transform: scale(1.2);
+}
+
+.promo{
+  width: 70%;
+  height: 400px;
+  display: block;
+  margin: 1rem auto;
+}
+.modal-btn{
+  cursor: pointer;
+  border: none;
+  color: var(--clr-primary2);
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+}
+
+
